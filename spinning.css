@@ -1,0 +1,52 @@
+body {
+    background-color: #16213e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.slot-machine {
+    padding: 20px;
+    background-color: #0f3460;
+    border-radius: 5px;
+}
+.slot-machine__slots {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.slot-machine__slot {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.slot-machine__slot img {
+    display: block;
+}
+.slot-machine__button {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background: #5c2e7e;
+    border: 0;
+    text-transform: uppercase;
+    color: white;
+    padding: 0 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.slot-machine__button:hover {
+    opacity: 0.7;
+}
+#log {
+    max-width: 380px;
+    font: normal 14px sans-serif;
+    color: white;
+    word-wrap: break-word;
+}
